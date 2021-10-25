@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="6 column">
+                <div class="heading">
+                    <center>
+                        <h1>Book List</h1>
+                    </center>
+                </div>
+                <div class="content">
+                    <table class="u-full-width">
+                        <thead>
+                            <tr>
+                                <th>Book Title</th>
+                                <th>Author</th>
+                                <th>ISBN</th>
+                            </tr>
+                        </thead>
+                        <form action="" id="book-form">
+                            <tbody>
+                                <tr>
+                                    <td> <input class="u-full-width" type="text" placeholder="Book Title" id="title">
+                                    </td>
+                                    <td>
+                                        <input class="u-full-width" type="text" placeholder="Author Name" id="author">
+                                    </td>
+                                    <td>
+                                        <input class="u-full-width" type="number"
+                                            placeholder="Internation Standard Book Number" id="isbn">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3">
+                                        <input class="button-primary" type="submit" value="ADD BOOK">
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </form>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="display-books">
+        <div class="row">
+            <div class="6 column">
+                <div class="heading">
+                    <center>
+                        <h1>Added Books</h1>
+                    </center>
+                </div>
+                <div class="content">
+                    <table class="u-full-width">
+                        <thead>
+                            <tr>
+                                <th>Book Title</th>
+                                <th>Author</th>
+                                <th>ISBN</th>
+                                <th>Delete</th>
+                            </tr>
+                        </thead>
+                        <tbody id="add-book">
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <script src="app.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+
+</html>
